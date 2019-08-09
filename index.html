@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf8" />
+		<script type="text/javascript" src="js/carros.js"></script>
+		<title>projCarros</title>
+	</head>
+	<body>
+		<h1>Cadastro de Carros</h1>
+		<form>
+			<p>Marca:<br>
+				<input type="text" id="txtMarca" placeholder="Informe a marca" />
+			</p>
+			<p>Modelo:<br>
+				<input type="text" id="txtModelo" placeholder="Informe o modelo" />
+			</p>
+			<p>Ano:<br>
+				<input type="number" id="txtAno" placeholder="Informe o ano" min="1950" max="2019" />
+			</p>
+			<p>
+				<input type="checkbox" id="chkEscadinha" />
+				<label for="chkEscadinha">Tem escadinha</label>
+			</p>
+			<p>Tanque:<br>
+				<input type="number" id="txtTanque" placeholder="Informe o volume do tanque" min="1" max="50" />
+			</p>
+			<p>Capacidade do Tanque:<br>
+				<input type="number" id="txtCapacidadeTanque" placeholder="Informe a capacidade do tanque" min="1" max="50" />
+			</p>
+			<p>
+				<b>Combustiveis</b>
+			</p>
+			<p>
+				<input type="checkbox" id="chkEtanol" value="Etanol" />
+				<label for="chkEtanol">Etanol</label>
+			</p>
+			<p>
+				<input type="checkbox" id="chkGasolina" value="Gasolina" />
+				<label for="chkGasolina">Gasolina</label>
+			</p>
+			<p>
+				<input type="button" value="Cadastrar" onclick="cadastrar()" />
+			</p>
+			<div id="lista">
+			</div>
+		</form>
+	</body>
+</html>
