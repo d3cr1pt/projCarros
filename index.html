@@ -5,6 +5,16 @@
 		<script type="text/javascript" src="js/carros.js"></script>
 		<script src="js/jquery.js"></script>
 		<script>
+			$(function(){
+				$("h1").css("text-align","center");
+				$("form").css("text-align","center");
+				$("body").css("background-color","lightcyan");
+				$("input[type=text],input[type=number]").css("border-radius","5px").css("width","300px").css("height","20px");
+				$("input[type=button]#cad").click(cadastrar);
+				$(document).change(function(){
+					$("li").css("color","red")
+				})	
+			});
 			
 		</script>
 		<title>projCarros</title>
@@ -43,7 +53,7 @@
 				<label for="chkGasolina">Gasolina</label>
 			</p>
 			<p>
-				<input type="button" value="Cadastrar" onclick="cadastrar()" />
+				<input type="button" id="cad" value="Cadastrar" />
 			</p>
 			<div id="lista">
 			</div>
